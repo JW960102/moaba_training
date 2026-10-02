@@ -1,4 +1,4 @@
-#landing *{color: #010101;}
+#landing *{color: #010101; }
 
 /* 페이퍼로지 3*/
 @font-face { font-family: 'Paperlogy-3Light'; src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2'); font-weight: 300; font-style: normal; } 
@@ -15,6 +15,28 @@
 /* 페이퍼로지 9 */
 @font-face { font-family: 'Paperlogy-9Black'; src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2'); font-weight: 900; font-style: normal; } 
 
+/* 지마켓산스 */
+@font-face {
+  font-family: 'GMarketSans';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GMarketSans';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GMarketSans';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
+
 :root {
     --pl3: 'Paperlogy-3Light';
     --pl4: 'Paperlogy-4Regular';
@@ -25,6 +47,7 @@
     --pl9: 'Paperlogy-9Black';
     --green: #009223;
     --light_green: #e6f082;
+    --Gmarket: 'GMarketSans';
 }
 
 /* br */
@@ -96,6 +119,90 @@ br.view440{display: block;}
 /* ------------------------------------------------------------------------------------------------------------ */
 
 /* sec1 */
-#sec1{background: url(https://www.moa-ba.com/gnu/data/cheditor/260511_fireMockTest/sec1_bg.webp) no-repeat 50% 50%; background-size: cover; position: relative;}
-#sec1 .in_wrap { width: 100%; background: #222; }
-.in_wrap .point_txt { font-size: ; }
+#sec1 h2 { font-family: var(--Gmarket); }
+#sec1 h3 { font-family: var(--Gmarket); }
+#sec1 p { font-family: var(--Gmarket); }
+#sec1 span { font-family: var(--Gmarket); }
+
+#sec1{ background-color: #323232; letter-spacing: -.02em; }
+#sec1 .in_wrap { width: 100%; }
+#sec1 .in_wrap .point { margin-bottom: 23px; }
+#sec1 .main_txt { font-size: clamp(18px, -17.8px + 4.66vw, 40px); font-weight: 500; line-height: 1; color: #ffbb50; margin-bottom: 40px; }
+#sec1 .main_txt .impact { font-size: clamp(22px, -26.8px + 6.36vw, 52px); font-weight: 800; color: #ffbb50; }
+
+#sec1 .hero { position: relative; z-index: 0; border-radius: 15px; background: linear-gradient(154deg, #4b4b4b 0%, #737373 47%, #737373 52%, #4b4b4b 100%); padding: 40px; }
+#sec1 .hero .txt { display: flex; align-items: flex-end; gap: 12px; margin-bottom: 25px; }
+#sec1 .hero .txt li { width: 19%; margin: 0; }
+#sec1 .hero .txt li p { width: 100%; font-size: 15px; color: #fff; }
+#sec1 .hero .txt li p:first-child { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border-radius: 7px; background: #1b1a16; padding: 20px 10px; min-height: 130px; margin-bottom: 70px; }
+#sec1 .hero .txt li p:first-child::after { content: ''; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-top: 12px solid #1b1a16; border-left: 6px solid transparent; border-right: 6px solid transparent; }
+#sec1 .hero .txt li p img { position: absolute; left: 5%; top: -12%; }
+#sec1 .hero .txt li p .bottomLine { color: #fff; font-size: 15px; text-decoration: underline; text-decoration-color: #fff; text-underline-offset: 3px; }
+#sec1 .hero .txt li .procedure { text-align: left; padding: 21px 12px; border-radius: 7px; }
+#sec1 .hero .txt li:nth-child(1) .procedure { min-height: 150px; background: #ffc495; }
+#sec1 .hero .txt li:nth-child(2) .procedure { min-height: 185px; background: #ffb67b; }
+#sec1 .hero .txt li:nth-child(3) .procedure { min-height: 215px; background: #ffad6b; }
+#sec1 .hero .txt li:nth-child(4) .procedure { min-height: 245px; background: #cbcbcb; }
+#sec1 .hero .txt li:nth-child(5) .procedure { min-height: 275px; background: #cbcbcb; }
+#sec1 .hero .txt li .procedure h3 { font-size: 24px; margin-bottom: 16px; }
+#sec1 .hero .txt li .procedure h3::after { content: ''; display: block; background: #000; width: 100%; height: 2px; }
+#sec1 .hero .txt li .procedure p { color: #000; font-size: 17px; }
+#sec1 .hero .complate_box { position: relative; background: #000; height: 70px; width: 55%; margin: 0 auto; border-radius: 15px; }
+#sec1 .hero .complate_box .complete { font-size: clamp(22px, 16.8px + 1.39vw, 34px); color: #fff; line-height: 75px; }
+#sec1 .hero .complate_box .flag { z-index: -1; position: absolute; width: 40px; height: auto; left: 20%; top: -70%; }
+#sec1 .hero .dawn_arrow { margin-bottom: 15px; }
+
+#sec1 .in_wrap .caption { color: #e5e5e5; font-size: 12px; margin-top: 10px; text-align: right; }
+#sec1 .in_wrap .subject_txt { margin-top: 20px; }
+#sec1 .in_wrap .subject_txt h2 { display: inline-block; font-size: clamp(20px, 9.6px + 2.77vw, 44px); color: #fff; margin: 0; position: relative; z-index: 0; }
+#sec1 .in_wrap .subject_txt h3 { font-size: clamp(18px, 10.2px + 2.08vw, 36px); color: #fff; font-weight: 400; }
+#sec1 .in_wrap .subject_txt h2::before { 
+  content: '';
+  width: 100%;
+  height: 15px; 
+  background: #a4571a; 
+  bottom: 5%;
+  left: 0;
+  position: absolute;
+  display: inline-block;
+  z-index: -1; }
+
+
+@media (max-width:1180px) {
+  #sec1 .hero .txt li p:first-child { font-size: clamp(10px, 8.14px + 0.5vw, 14px); }
+  #sec1 .hero .txt li p .bottomLine { font-size: clamp(10px, 8.14px + 0.5vw, 14px); }
+  #sec1 .hero .txt li .procedure h3 { font-size: clamp(14px, 12.14px + 0.5vw, 18px); margin-bottom: 10px; }
+  #sec1 .hero .txt li .procedure p { font-size: clamp(10px, 7.2px + 0.75vw, 16px); }
+
+  #sec1 .in_wrap .point { width: 180px; }
+  #sec1 .hero .complate_box { height: 60px; }
+  #sec1 .hero .complate_box .complete { line-height: 60px; }
+}
+
+@media (max-width:768px) {
+  #landing #sec1 .in_wrap { padding: 30px 16px; }
+  #sec1 .hero_scroll  { overflow-x: auto; padding-bottom: 14px; }
+  #sec1 .hero_scroll .hero { min-width: 736px; }
+  #sec1 .hero_scroll::-webkit-scrollbar { height: 6px; }
+  #sec1 .hero_scroll::-webkit-scrollbar-track { background: #fff; border-radius: 10px; }
+  #sec1 .hero_scroll::-webkit-scrollbar-thumb { background: #ff7a1a; border-radius: 10px; }
+
+  #sec1 .main_txt { margin-bottom: 20px; }
+  #sec1 .in_wrap .caption { font-size: 10px; }
+
+  #sec1 .in_wrap .point { width: 100px; margin-bottom: 15px; }
+  #sec1 .hero .complate_box { height: 40px; border-radius: 10px; }
+  #sec1 .hero .complate_box .complete { line-height: 40px; }
+  #sec1 .hero .complate_box .flag { width: 25px; }
+  #sec1 .hero .txt li p:first-child { min-height: 110px; padding: 15px 7px; }
+  #sec1 .hero .txt li p img { width: 20%; }
+  #sec1 .hero .dawn_arrow { width: 7%; }
+
+  #sec1 .hero .txt li:nth-child(1) .procedure { min-height: 100px; }
+  #sec1 .hero .txt li:nth-child(2) .procedure { min-height: 125px; }
+  #sec1 .hero .txt li:nth-child(3) .procedure { min-height: 155px; }
+  #sec1 .hero .txt li:nth-child(4) .procedure { min-height: 185px; }
+  #sec1 .hero .txt li:nth-child(5) .procedure { min-height: 215px; }
+
+  #sec1 .in_wrap .subject_txt h2::before { height: 9px; }
+}
