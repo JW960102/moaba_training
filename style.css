@@ -97,4 +97,5 @@ br.view440{display: block;}
 
 /* sec1 */
 #sec1{background: url(https://www.moa-ba.com/gnu/data/cheditor/260511_fireMockTest/sec1_bg.webp) no-repeat 50% 50%; background-size: cover; position: relative;}
-#sec1{}
+#sec1 .in_wrap { width: 100%; background: #222; }
+.in_wrap .point_txt { font-size: ; }
